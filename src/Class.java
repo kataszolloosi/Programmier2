@@ -11,6 +11,38 @@ public class Class {
         enrolledStudents =0;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getHours() {
+        return hours;
+    }
+
+    public void setHours(int hours) {
+        this.hours = hours;
+    }
+
+    public int getMaxCapacity() {
+        return maxCapacity;
+    }
+
+    public void setMaxCapacity(int maxCapacity) {
+        this.maxCapacity = maxCapacity;
+    }
+
+    public int getEnrolledStudents() {
+        return enrolledStudents;
+    }
+
+    public void setEnrolledStudents(int enrolledStudents) {
+        this.enrolledStudents = enrolledStudents;
+    }
+
     @Override
     public String toString() {
         return "Class{" +

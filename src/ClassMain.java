@@ -13,6 +13,15 @@ public class ClassMain {
         s1.enroll(c1);
         s1.printClasses();
 
+        s1.enroll(c1);
+        System.out.println();
+        Class c2 = new Class("modelle",8,10);
+        Class c3 = new Class("prog1",8,10);
+        s1.enroll(c2);
+        s1.enroll(c3);
+
+
+
 
     }
 }
