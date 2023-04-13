@@ -1,12 +1,30 @@
 public class Student {
+    private int id;
+    private static int counter = 0;
+    private int counter2;
+
     private String firstName;
+
     private String lastName;
     private Class[] classes;
-
     public Student(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.classes = new Class[3];
+        this.id = counter++;
+        counter2++;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public int getCounter2() {
+        return counter2;
+    }
+
+    public static int getCounter() {
+        return counter;
     }
 
     public String getFirstName() {
@@ -88,6 +106,15 @@ public class Student {
     public void printClasses() {
         for (int i = 0; i < classes.length; i++) {
             System.out.println(classes[i]);
+        }
+    }
+
+    public void printStudyDays(){
+        System.out.println("Student "+ this.lastName+ " has classes on: ");
+        for (int i = 0; i < classes.length; i++) {
+            if(classes[i] !=null) {
+                System.out.println(classes[i].getTag()+ "("+ classes[i].getName()+")");
+            }
         }
     }
 
