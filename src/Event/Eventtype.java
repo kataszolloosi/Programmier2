@@ -1,4 +1,4 @@
-package Donnerstag1304;
+package Event;
 
 public enum Eventtype {
     KONZERT, VORTRAG, REISE

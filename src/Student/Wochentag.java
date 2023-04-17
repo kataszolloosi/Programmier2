@@ -1,4 +1,4 @@
-package Donnerstag1304;
+package Student;
 
 public enum Wochentag {
     //konstante werte

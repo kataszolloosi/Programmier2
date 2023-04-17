@@ -1,4 +1,4 @@
-package Donnerstag1304;
+package Friend;
 
 import java.util.ArrayList;
 

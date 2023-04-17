@@ -1,4 +1,4 @@
-package Donnerstag1304;
+package Info;
 
 public class Profil {
     private Info name;

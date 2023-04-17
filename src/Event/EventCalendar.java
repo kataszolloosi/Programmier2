@@ -1,6 +1,7 @@
-package Donnerstag1304;
+package Event;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class EventCalendar {
     private ArrayList<Event> events = new ArrayList<>();  //ich muss kein konstruktor machen, wenn es steht hier
@@ -72,6 +73,21 @@ public class EventCalendar {
                 result = e;
             }
         } return result;*/   //es ist die gleiche wie mit fori
+    }
+    public void removeExpensive3 (double limit) {
+        //iterator mindig a "sor" elejen all, amig van valami mögötte, addig müködik, több elem törlesenel jo
+        Iterator<Event> it = events.iterator();
+        while (it.hasNext()) {
+            Event event = it.next();
+            if (event.getPreis() > limit) {
+                it.remove();
+            }
+        }
+
+        //        Iterator<Event> it = events.iterator();
+        //        while (it.hasNext()) {
+        //        sout(it.next()); }
+        //        sout();
     }
 
 }

@@ -1,4 +1,4 @@
-package Donnerstag1304;
+package Event;
 
 import java.util.ArrayList;
 
@@ -28,5 +28,8 @@ public class EventMain {
         ec.print(byort);
         System.out.println("---die teuerste event---");
         System.out.println(ec.getMostExpensive());
+        System.out.println("---remove expensive---"); //nem mutatja, ami 7000 felett van
+        ec.removeExpensive3(7000);
+        ec.print();
     }
 }

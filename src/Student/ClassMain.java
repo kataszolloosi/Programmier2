@@ -1,4 +1,4 @@
-package Donnerstag1304;
+package Student;
 
 public class ClassMain {
     public static void main(String[] args) {

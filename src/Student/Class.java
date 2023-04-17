@@ -1,4 +1,4 @@
-import Donnerstag1304.Wochentag;
+package Student;
 
 public class Class {
     private String name;

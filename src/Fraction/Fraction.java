@@ -1,4 +1,4 @@
-package Donnerstag1304;
+package Fraction;
 
 public class Fraction {
     private int numerator;  //zähler

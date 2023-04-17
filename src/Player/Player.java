@@ -1,24 +1,24 @@
-package Donnerstag1304;
+package Player;
 
 public class Player {
+    //attribute
     private int id;
     private String name;
-    private Team team;
     private int points;
-    private static int counter= 0;
-
-    public Player(String name, Team team, int points) {
+    private static int counter= 1;
+    private Team team;
+    //konstruktor
+    public Player(String name, int points) {
         this.name = name;
-        this.team = team;
-        this.points = points;
+        this.points =points;
         this.id=counter++;
     }
 
     @Override
     public String toString() {
         return "Player{" +
-                "name='" + name + '\'' +
-                ", team=" + team +
+                "id='" + id + '\'' +
+                " name='" + name + '\'' +
                 ", points=" + points +
                 '}';
     }
@@ -31,14 +31,6 @@ public class Player {
         this.id = id;
     }
 
-    public static int getCounter() {
-        return counter;
-    }
-
-    public static void setCounter(int counter) {
-        Player.counter = counter;
-    }
-
     public String getName() {
         return name;
     }
@@ -47,19 +39,27 @@ public class Player {
         this.name = name;
     }
 
-    public Team getTeam() {
-        return team;
-    }
-
-    public void setTeam(Team team) {
-        this.team = team;
-    }
-
     public int getPoints() {
         return points;
     }
 
     public void setPoints(int points) {
         this.points = points;
+    }
+
+    public static int getCounter() {
+        return counter;
+    }
+
+    public static void setCounter(int counter) {
+        Player.counter = counter;
+    }
+
+    public Team getTeam() {
+        return team;
+    }
+
+    public void setTeam(Team team) {
+        this.team = team;
     }
 }

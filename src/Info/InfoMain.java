@@ -1,4 +1,4 @@
-package Donnerstag1304;
+package Info;
 
 import java.time.LocalDateTime;
 

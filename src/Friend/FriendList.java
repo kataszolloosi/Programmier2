@@ -1,10 +1,7 @@
-package Donnerstag1304;
+package Friend;
 
-import java.lang.reflect.Array;
 import java.time.Year;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class FriendList {
     private ArrayList<Friend> friends = new ArrayList<>();

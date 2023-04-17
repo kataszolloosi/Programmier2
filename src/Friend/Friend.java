@@ -1,4 +1,4 @@
-package Donnerstag1304;
+package Friend;
 
 public class Friend {
     private String name;
