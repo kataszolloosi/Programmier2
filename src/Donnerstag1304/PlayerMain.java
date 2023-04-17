@@ -1,3 +1,5 @@
+package Donnerstag1304;
+
 import Donnerstag1304.Player;
 import Donnerstag1304.PlayerVerwaltung;
 import Donnerstag1304.Team;

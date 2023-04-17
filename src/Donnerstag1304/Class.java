@@ -1,3 +1,5 @@
+import Donnerstag1304.Wochentag;
+
 public class Class {
     private String name;
     private int hours;

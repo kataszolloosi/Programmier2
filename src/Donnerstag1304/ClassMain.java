@@ -1,9 +1,11 @@
+package Donnerstag1304;
+
 public class ClassMain {
     public static void main(String[] args) {
-        Class c = new Class("programmieren2", 35, 15,Wochentag.DONNERSTAG);
-        Class c1 = new Class("Math", 15, 15,Wochentag.FREITAG);
-        Class c2 = new Class("Modelle", 25, 15,Wochentag.DIENSTAG);
-        Class c3 = new Class("Datenbank", 25,15,Wochentag.MONTAG);
+        Class c = new Class("programmieren2", 35, 15, Wochentag.DONNERSTAG);
+        Class c1 = new Class("Math", 15, 15, Wochentag.FREITAG);
+        Class c2 = new Class("Modelle", 25, 15, Wochentag.DIENSTAG);
+        Class c3 = new Class("Datenbank", 25,15, Wochentag.MONTAG);
 
 
         System.out.println(c.getName() + " " + c.maxCapacityReached());
