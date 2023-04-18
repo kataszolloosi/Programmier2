@@ -5,19 +5,37 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class PlayerListe {
-    private ArrayList<Player> players = new ArrayList<>();
-    Map<String, Integer> player = new HashMap<>();
+    Map<Player, Integer> player = new HashMap<>();
+
+    public Map<Player, Integer> getPlayer() {
+        return player;
+    }
+
+
 
     public void addOrUpdate(Player p, int points) {
-       player.put(String.valueOf(p),points);
-        System.out.println(player);
+        Integer s = player.get(p);
+        if (s == null) {
+            player.put(p, points);
+        } else {
+            player.put(p, player.get(p) + points);
+        }
     }
 
     public ArrayList<Player> getPlayerWithPoints(int points) {
-        for (Player p : players) {
-            if (points > player.get(points)) {
-                return players;
+        ArrayList<Player> result = new ArrayList<>();
+        for (Map.Entry<Player, Integer> entry : player.entrySet()) {
+            if (entry.getValue()>points) {
+                result.add(entry.getKey());
+                //Map<Key, Value> -- Key spieler, Value points(integer)
+                //key+value = entryset
             }
-        } return null;
+        } return result;
+
+        /*for (Player p : player.keySet()) {
+            if (player.get(p) > points) {
+                result.add(p);
+            }
+        } return result;   */
     }
 }
