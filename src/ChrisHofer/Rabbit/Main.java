@@ -1,5 +1,7 @@
 package ChrisHofer.Rabbit;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         Hase h1 =new Hase("Tapsi");
@@ -25,6 +27,19 @@ public class Main {
 
         System.out.println("-----alle hasen hoppeln-----");
         stall.hoppeln();
+        System.out.println();
+        //eine kleine party
+        System.out.println("-----Party beginnt-----");
+        ArrayList<GoesToParty> partyHasen = new ArrayList<>();
+        partyHasen.add(h1);
+        partyHasen.add(w1);
+        partyHasen.add(o1);
+        partyHasen.add(new Hase("Bernhard"));
+        partyHasen.add(new Igel());
+        for (GoesToParty p : partyHasen) {
+            p.party("tequila", "Karottenkuchen");
+        }
+
 
     }
 }

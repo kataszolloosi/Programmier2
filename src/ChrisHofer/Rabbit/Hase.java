@@ -1,6 +1,6 @@
 package ChrisHofer.Rabbit;
 
-public class Hase {
+public class Hase implements GoesToParty {
     private String name;
 
     public Hase(String name) {
@@ -30,5 +30,10 @@ public class Hase {
         return "Hase{" +
                 "name='" + name + '\'' +
                 '}';
+    }
+
+    @Override
+    public void party(String drink, String cake) {
+        System.out.println(name+ " geht zur Party und isst "+cake+" und trinkt "+drink);
     }
 }
