@@ -3,7 +3,7 @@ package ChrisHofer.Rabbit;
 public class Weihnachtshase extends Hase{
 
     public Weihnachtshase(String name, int alter) {
-        super(name, alter);
+        super(name);
     }
 
     public void verteileGeschenke() {

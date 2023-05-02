@@ -12,6 +12,7 @@ public class WordCounter {
         this.text = text;
     }
 
+
     public void convertTextToMap() {
         removePunctuation();
         System.out.println(text);

@@ -12,7 +12,7 @@ public class Hase implements GoesToParty, Comparable<Hase> {
         this.alter = alter;
     }
 
-    public Hase(String name, int alter) {
+    public Hase(String name) {
         this.alter = alter; this.name = name;
     }
 

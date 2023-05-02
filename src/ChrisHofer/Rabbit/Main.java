@@ -1,13 +1,12 @@
 package ChrisHofer.Rabbit;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Hase h1 =new Hase("Tapsi", 5);
+        Hase h1 =new Hase("Tapsi");
         Weihnachtshase w1 = new Weihnachtshase("Hapsi", 2);
         OsterHase o1 = new OsterHase("TapsiHapsi", 6);
         System.out.println("-----Tapsi Hase-----");
@@ -38,7 +37,7 @@ public class Main {
         partyHasen.add(h1);
         partyHasen.add(w1);
         partyHasen.add(o1);
-        partyHasen.add(new Hase("Bernhard", 3));
+        partyHasen.add(new Hase("Bernhard"));
         partyHasen.add(new Igel());
         for (GoesToParty p : partyHasen) {
             p.party("tequila", "Karottenkuchen");
