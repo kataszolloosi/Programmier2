@@ -9,7 +9,7 @@ public class Main {
         employeeManager.addEmployee(e1);
         employeeManager.addEmployee(e2);
 
-        employeeManager.calcTotalSalary();
+        System.out.println(employeeManager.calcTotalSalary());
 
 
     }
