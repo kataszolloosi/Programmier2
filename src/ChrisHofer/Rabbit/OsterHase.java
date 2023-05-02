@@ -2,8 +2,8 @@ package ChrisHofer.Rabbit;
 
 public class OsterHase extends Hase{
 
-    public OsterHase(String name) {
-        super(name);
+    public OsterHase(String name, int alter) {
+        super(name, alter);
     }
 
     public void versteckeOstereier() {

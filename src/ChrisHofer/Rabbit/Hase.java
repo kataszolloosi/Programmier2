@@ -1,10 +1,19 @@
 package ChrisHofer.Rabbit;
 
-public class Hase implements GoesToParty {
+public class Hase implements GoesToParty, Comparable<Hase> {
     private String name;
+    private int alter;
 
-    public Hase(String name) {
-        this.name = name;
+    public int getAlter() {
+        return alter;
+    }
+
+    public void setAlter(int alter) {
+        this.alter = alter;
+    }
+
+    public Hase(String name, int alter) {
+        this.alter = alter; this.name = name;
     }
 
     public String getName() {
@@ -28,12 +37,23 @@ public class Hase implements GoesToParty {
     @Override
     public String toString() {
         return "Hase{" +
-                "name='" + name + '\'' +
+                "name='" + name + '\'' + " " + alter +
                 '}';
     }
 
     @Override
     public void party(String drink, String cake) {
         System.out.println(name+ " geht zur Party und isst "+cake+" und trinkt "+drink);
+    }
+
+    //alter aufsteigend sortieren
+    @Override
+    public int compareTo(Hase o) {
+        if (this.alter < o.alter) {
+            return -1;
+        } if (this.alter > o.alter) {
+            return 1;
+        }
+        return 0;
     }
 }
