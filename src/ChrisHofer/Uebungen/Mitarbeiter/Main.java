@@ -1,4 +1,4 @@
-package ChrisHofer.Übungen.Mitarbeiter;
+package ChrisHofer.Uebungen.Mitarbeiter;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ChrisHofer.Übungen.Animals;
+package ChrisHofer.Uebungen.Animals;
 
 import java.util.ArrayList;
 

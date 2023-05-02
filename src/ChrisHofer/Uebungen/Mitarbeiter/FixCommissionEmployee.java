@@ -1,4 +1,4 @@
-package ChrisHofer.Übungen.Mitarbeiter;
+package ChrisHofer.Uebungen.Mitarbeiter;
 
 public class FixCommissionEmployee extends Employee{
     protected double additionalCommission;

@@ -1,4 +1,4 @@
-package ChrisHofer.Übungen.Animals;
+package ChrisHofer.Uebungen.Animals;
 
 public class Cat extends Animal {
     protected String name;

@@ -21,15 +21,34 @@ public class Main {
         System.out.println();
         System.out.println("-----Upcasting-Downcastint--------");
         Beagle freddie = new Beagle("Freddie",5,"Gulasch");
-        //upcasting
+        //upcasting - objekt einer kindklasse wird auf referenz der basisklasse gespeichert
         Dog doggo = freddie;
         //bellt wie ein beagle, da eine beagle instanz auf der dog referenz ist
         doggo.bellen("wuff");
-        //downcasting
+        //downcasting - referenz einer basisklasse auf kindklasse casten
         Dog doggo2 = new Beagle("Hubert", 3, "Spaghetti");
         //wir möchten sein lieblingsessen wissen
         Beagle b1 = (Beagle) doggo2;
         b1.eatsLovedFood();
+
+        //instaceof Operator: überprüfen os instanz der klasse eintspricht
+        System.out.println("--------instanceof-------");
+        if (doggo2 instanceof Dog) {
+            System.out.println("yaay ist ein Hund");
+        }
+        //überprüfen on instanz genau einer konkreten klasse entspricht
+        System.out.println("-----------getClass---------");
+
+        if (doggo2.getClass().equals(Beagle.class)) {
+            System.out.println("yaay auf doggo2 ist wirklich ein beagle");
+        }
+
+        if (doggo2.getClass().equals(Dog.class)) {
+            System.out.println("Hier sollten wir nicht reinkommen");
+        } else {
+            System.out.println("beagle ist kein hund - sondern ein beagle");
+        }
+
 
     }
 }

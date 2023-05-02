@@ -8,6 +8,8 @@ public class IntTest {
         Integer a2 = new Integer(13);
         //gleich wie beim a2 - autoboxing
         Integer a3 = 14;
+
+
         System.out.println(a1);
         System.out.println(a2);
         System.out.println(a3);

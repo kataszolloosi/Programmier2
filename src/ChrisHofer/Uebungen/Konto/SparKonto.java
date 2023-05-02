@@ -1,4 +1,4 @@
-package ChrisHofer.Übungen.Konto;
+package ChrisHofer.Uebungen.Konto;
 
 public class SparKonto extends Konto{
     public SparKonto(String inhaber) {

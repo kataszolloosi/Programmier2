@@ -1,4 +1,4 @@
-package ChrisHofer.Übungen.Mitarbeiter;
+package ChrisHofer.Uebungen.Mitarbeiter;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package ChrisHofer.Übungen.Animals;
+package ChrisHofer.Uebungen.Animals;
 
 public class Frog extends Animal {
     public Frog(String color, int countEyes) {
