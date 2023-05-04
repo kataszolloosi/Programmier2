@@ -9,12 +9,12 @@ public class GiroKonto extends Konto{
     }
 
     @Override
-    public void einzahlen(double wert) {
-
+    public double einzahlen(double wert) {
+        return super.einzahlen(wert);
     }
 
     @Override
     public double auszahlen(double wert) {
-        return wert;
+        return super.auszahlen(wert);
     }
 }

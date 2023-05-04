@@ -9,7 +9,8 @@ public class Main {
         employeeManager.addEmployee(e1);
         employeeManager.addEmployee(e2);
 
-        System.out.println(employeeManager.calcTotalSalary());
+        System.out.println("Gesamte gehalt von aller Mitaerbeiter: " + employeeManager.calcTotalSalary());
+        System.out.println(employeeManager.getSalaryByDepartment());
 
 
     }

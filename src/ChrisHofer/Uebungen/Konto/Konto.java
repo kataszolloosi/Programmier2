@@ -7,11 +7,12 @@ public class Konto {
     public Konto(String inhaber) {
         this.inhaber = inhaber;
         kontostand =0;    }
-    public void einzahlen(double wert) {
-
+    public double einzahlen(double wert) {
+        return kontostand+=wert;
     }
     public double auszahlen(double wert) {
-        return wert;
+
+        return kontostand-=wert;
     }
 
     public String getInhaber() {
