@@ -9,12 +9,16 @@ public class JugendGiroKonto extends GiroKonto{
     }
 
     @Override
-    public double einzahlen(double wert) {
-        return super.einzahlen(wert);
+    public void einzahlen(double wert) {
+
+        super.einzahlen(wert);
     }
 
     @Override
     public double auszahlen(double wert) {
+        if (wert > buchungslimit) {
+            return  super.auszahlen(buchungslimit);
+        }
         return super.auszahlen(wert);
     }
 }

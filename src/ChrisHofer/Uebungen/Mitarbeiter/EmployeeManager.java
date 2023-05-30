@@ -31,7 +31,7 @@ public class EmployeeManager {
 
     // Liefert das gesamte Gehalt aller Mitarbeiter auf die einzelnen Abteilungen abgebildet
     public HashMap<String, Double> getSalaryByDepartment() {
-        HashMap<String, Double> map = new HashMap<>();
+        HashMap<String, Double> map = new HashMap<String, Double>();
 
         for (Employee e: empList) {
             if (map.containsKey(e.department)){
